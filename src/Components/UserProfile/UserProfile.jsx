@@ -1,5 +1,10 @@
-function UserProfile() {
-  return <div className="user-profile">{/* User info will go here */}</div>;
+function UserProfile({ user }) {
+  return (
+    <div className="user-profile">
+      <h2>{user.name}</h2>
+      <p>{user.email}</p>
+    </div>
+  );
 }
 
 export default UserProfile;
